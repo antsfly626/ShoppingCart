@@ -3,58 +3,98 @@ html, body {
   width: 100%;
   font-family: monospace;
   background-color: #c9d9c9;
-  margin: 10%;
+  margin: 0;
+  padding: 0;
 }
 
 div {
   text-align: center;
   background-color: #6f7a66;
-  padding: 10px;
-  margin: 10%;
+  padding: 2rem;
+  margin: 5%;
   box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
   color: white;
-  
+  overflow: hidden;
 }
 
-h2{
+h2 {
   text-align: center;
-  padding: 5px;
+  padding: 1rem;
   font-weight: bold;
   color: #6f7a66;
-  font-size: 16px;
+  font-size: 1.5rem;
+
 }
 
-img{
-  width: 200px;
-  height: 200px;
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
   padding: 5px;
   border-radius: 10%;
-
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
 }
 
-table{
+table {
   text-align: center;
-  padding: 25px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
   color: #6f7a66;
 }
 
-tr, td{
-  border: 1px solid;
-  border-color: #6f7a66;
+tr, td {
+  border: 1px solid #6f7a66;
   border-width: 1px;
-  background-color:#dfeed4;
-
+  background-color: #dfeed4;
 }
 
 ol {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 100px;
+  padding: 1rem;
+  margin-left: 4rem;
   list-style-type: lower-roman;
 }
 
-p{
-  padding-left: 100px;
+p {
+  padding: 1rem;
+  margin: 0; 
+}
+
+@media screen and (max-width: 768px) {
+  div {
+    margin: 2%;
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  img {
+    max-width: 150px;
+  }
+
+  ol, p {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div {
+    margin: 1%;
+    padding: 0.5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  img {
+    max-width: 100px;
+  }
+
+  ol, p {
+    padding: 0.5rem;
+  }
 }

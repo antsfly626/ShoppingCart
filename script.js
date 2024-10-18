@@ -1,8 +1,8 @@
 var index = 0;
 var imgArray = new Array();
   imgArray[0] = "https://www.usbg.gov/sites/default/files/images/2021corpseflowerusbg.jpg";
-  imgArray[1] = "https://jmflandscaping.com/wp-content/uploads/2020/12/20-most-interesting-plant-shy-plant.jpg";
-  imgArray[2] = "https://jmflandscaping.com/wp-content/uploads/2020/12/tropical-pitcher-plants-20-most-interesting-plants-1158x1800.jpg";
+  imgArray[1] = "https://bloomscape.com/wp-content/uploads/2021/11/Plant-Care-Details-600x600-3.jpg?ver=621438";
+  imgArray[2] = "https://www.flytrapking.com/cdn/shop/products/Sarracenia-flava-All-green-NC-N-8077-pitcher-plant-2_1200x1200.jpg?v=1639174751";
 
 var Description = new Array();
   Description[0]="Native to the rainforests in Sumatra, corpse flowers are known for their blooms that smell like rotting animals to attract scavengers as pollinators."
@@ -20,7 +20,7 @@ function chosenimage(index) {
   
   speech.text = Description[index];
   window.speechSynthesis.speak(speech);
-  alert(index);
+  alert(Description[index]);
 
 
 }
